@@ -7,28 +7,25 @@ import message from "../assets/message.png"
 import plus from "../assets/plus.png"
 import setting from "../assets/setting.png"
 
-const icons = [{
-  id:1,
-  src:logo
-},
+const icons = [
 {
-   id:2,
+   id:1,
   src:home
 },
 {
-   id:3,
+   id:2,
   src:compass
 },
 {
-   id:4,
+   id:3,
   src:plus
 },
 {
-   id:5,
+   id:4,
   src:message
 },
 {
-    id:6,
+    id:5,
     src:bell
 }
 ]
@@ -36,12 +33,13 @@ const icons = [{
 
 function Sidebar() {
   return (
-    <div className='w-24 bg-white h-screen border-r border-gray-300 flex flex-col items-center '>
+    <div className='w-24 bg-white h-screen border-r border-gray-300 flex flex-col items-center sticky top-0'>
       <div className="flex flex-col items-center justify-between h-full mt-4">
-        <div className="flex flex-col gap-8 mt-4">
+        <div className="flex flex-col gap-10 mt-4 items-center">
+          <img src={logo} className='cursor-pointer' alt="" />
           {icons.map((icon, index) => (
-            <div key={index} className="hover:bg-gray-200 p-2 border rounded-full cursor-pointer ">
-            <img  className='w-8' src={icon.src} alt="icon" />
+          <div key={index} className="p-2 cursor-pointer hover:bg-gray-200  rounded-full">
+            <img  className='w-6' src={icon.src} alt="icon" />
           </div>
           ))}
         </div>
