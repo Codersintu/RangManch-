@@ -6,7 +6,8 @@ function Topbar() {
   const currentuser=true;
   const [open,setOpen]=useState(false);
   return (
-    <div className='flex-1 flex gap-4 items-center'>
+    <div className="flex-1 z-10 sticky top-0 bg-white ">
+    <div className='flex-1 flex gap-4 items-center py-4 px-3'>
         <div className="flex-1 flex items-center rounded-xl bg-gray-200 px-4 py-4 hover:bg-gray-300">
           <img className="w-5" src={search} alt="" />
           <input type="text" placeholder='Search...' className='bg-transparent flex-1 border-none outline-none px-2'/>
@@ -29,6 +30,7 @@ function Topbar() {
           </div>
         </div>
       
+    </div>
     </div>
   )
 }

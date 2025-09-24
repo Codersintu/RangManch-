@@ -182,7 +182,7 @@ const items = [
 
 function Content() {
   return (
-      <div className="grid grid-cols-7 gap-3 mt-5 grid-auto-rows-[10px] content">
+      <div className="grid grid-cols-7 gap-3 mt-2 px-5 grid-auto-rows-[10px] content z-0 overflow-auto">
         {items.map(item=>(
         <GalleryItem key={item.id} item={item} />
         ))}

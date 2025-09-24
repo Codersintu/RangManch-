@@ -6,9 +6,9 @@ import Topbar from './component/Topbar'
 
 function App() {
   return (
-   <div className="flex w-full h-screen">
+   <div className="flex w-full h-screen ">
     <Sidebar/>
-    <div className="bg-white flex-1 p-8">
+    <div className="bg-white flex-1 overflow-auto">
       <Topbar/>
       <Content/>
     </div>

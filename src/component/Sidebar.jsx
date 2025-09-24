@@ -33,7 +33,7 @@ const icons = [
 
 function Sidebar() {
   return (
-    <div className='w-24 bg-white h-screen border-r border-gray-300 flex flex-col items-center sticky top-0'>
+    <div className='md:w-24 w-28 z-10 bg-white h-screen border-r border-gray-300 flex flex-col items-center sticky top-0'>
       <div className="flex flex-col items-center justify-between h-full mt-4">
         <div className="flex flex-col gap-10 mt-4 items-center">
           <img src={logo} className='cursor-pointer' alt="" />
