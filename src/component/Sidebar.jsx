@@ -39,7 +39,7 @@ function Sidebar() {
           <img src={logo} className='cursor-pointer' alt="" />
           {icons.map((icon, index) => (
           <div key={index} className="p-2 cursor-pointer hover:bg-gray-200  rounded-full">
-            <img  className='w-6' src={icon.src} alt="icon" />
+            <img  className='w-7' src={icon.src} alt="icon" />
           </div>
           ))}
         </div>
