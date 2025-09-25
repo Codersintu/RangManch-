@@ -1,4 +1,4 @@
-import React from 'react'
+
 import pin1 from '../assets/pin/pin1.jpeg'
 import pin2 from '../assets/pin/pin2.jpeg'
 import pin3 from '../assets/pin/pin3.jpeg'
@@ -182,7 +182,7 @@ const items = [
 
 function Content() {
   return (
-      <div className="grid grid-cols-7 gap-3 mt-2 px-5 grid-auto-rows-[10px] content z-0 overflow-auto">
+      <div className="grid grid-cols-7 gap-2 mt-1 px-5 grid-auto-rows-[10px] content z-0 overflow-auto">
         {items.map(item=>(
         <GalleryItem key={item.id} item={item} />
         ))}

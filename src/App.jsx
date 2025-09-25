@@ -1,18 +1,26 @@
 
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
-import Content from './component/Content'
-import Sidebar from './component/Sidebar'
-import Topbar from './component/Topbar'
+import LayOut from './component/layout/LayOut'
+import Home from './component/routes/Home'
+import Create from './component/routes/Create'
+import Post from './component/routes/Post'
+import Profile from './component/routes/Profile'
+import Auth from './component/routes/Auth'
+import Search from './component/routes/Search'
 
 function App() {
   return (
-   <div className="flex w-full h-screen ">
-    <Sidebar/>
-    <div className="bg-white flex-1 overflow-auto">
-      <Topbar/>
-      <Content/>
-    </div>
-   </div>
+  <Routes>
+    <Route element={<LayOut/>}>
+      <Route path='/' element={<Home/>}/>
+      <Route path='/create' element={<Create/>}/>
+      <Route path='/pins/:id' element={<Post/>}/>
+      <Route path='/:username' element={<Profile/>}/>
+      <Route path='/search' element={<Search/>}/>
+      </Route>
+      <Route path='/auth' element={<Auth/>}/>
+  </Routes>
   )
 }
 
