@@ -38,11 +38,11 @@ function Sidebar() {
             <Imag className="w-7" src="../general/bell.png" alt="icon" />
           </div>
         </div>
-        <div onClick={()=>setopen(!open)} className=" rounded-full  hover:bg-gray-200">
-          <Imag src="../general/setting.png" className="m-4 cursor-pointer w-8" alt="" />
+        <div onClick={()=>setopen(!open)} className="cursor-pointer rounded-full md:mb-10 mb-20  hover:bg-gray-200">
+          <Imag src="../general/setting.png"  alt="" />
         </div>
         {open &&(
-        <div className="flex flex-col absolute bottom-14 -left-5 bg-white shadow-lg border rounded-lg p-4 gap-4">
+        <div className="flex flex-col absolute bottom-24 -left-5 bg-white shadow-lg border rounded-lg p-4 gap-4">
           <Link to="/profile">
             <span className="cursor-pointer font-serif hover:bg-gray-200 ">Profile</span>
             </Link>
