@@ -4,11 +4,13 @@ import { Link } from "react-router-dom";
 import Imag from "./image/Imag";
 function Sidebar() {
   return (
-    <div className="w-24 z-10 bg-white h-screen border-r border-gray-300 flex flex-col items-center sticky top-0">
+    <div className="w-14 md:w-24 z-10 bg-white h-screen border-r border-gray-300 flex flex-col items-center sticky top-0">
       <div className="flex flex-col items-center justify-between h-full mt-4">
         <div className="flex flex-col gap-10 mt-4 items-center">
           <Link to="/">
-            <Imag src="../general/pin.png" className="cursor-pointer w-11" alt="" />
+          <div className="w-12">
+            <Imag src="../general/pin.png" alt="" />
+            </div>
           </Link>
           <Link to="/">
             <div className="p-2 cursor-pointer w-11 hover:bg-gray-200  rounded-full">

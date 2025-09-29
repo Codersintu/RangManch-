@@ -8,9 +8,9 @@ function Post() {
   const [emojiopen, setEmojiopen] = useState(false);
   return (
     <div className="w-full h-screen flex justify-center ">
-      <div className="max-w-4xl max-h-[500px] flex gap-7 shadow-sm p-2 ">
+      <div className="max-w-4xl max-h-[500px] flex gap-2 md:gap-4 shadow-sm p-2 ">
         <Link to="/">
-          <div className="w-10 h-10 cursor-pointer">
+          <div className="md:w-10 w-7  cursor-pointer">
             <Imag src="../general/backarr.png" />
           </div>
         </Link>
