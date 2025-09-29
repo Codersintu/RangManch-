@@ -6,7 +6,7 @@ function LayOut() {
   return (
      <div className="flex w-full h-screen ">
     <Sidebar/>
-    <div className="bg-white flex-1 overflow-auto">
+    <div className="bg-white flex-1 px-5 overflow-auto">
       <Topbar/>
       <Outlet/>
     </div>
