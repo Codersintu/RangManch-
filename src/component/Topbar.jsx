@@ -1,6 +1,7 @@
 
 import { useState } from "react";
 import Imag from "./image/Imag";
+import { Link } from "react-router-dom";
 function Topbar() {
   const currentuser=true;
   const [open,setOpen]=useState(false);
@@ -14,7 +15,9 @@ function Topbar() {
         <div className="hidden md:block relative">
         <div className="flex items-center cursor-pointer">
           {currentuser==true ? <>
+          <Link to="/profile">
           <div className="object-cover w-14"><Imag className="" src="../general/pin.png" alt="" /></div>
+          </Link>
           <div className="w-8" onClick={()=>setOpen(!open)}><Imag className=""  src="../general/down.png" alt="" /></div>
           </>
           : <span className="cursor-pointer p-1 hover:bg-gray-200 rounded-xl">Sign In</span>}

@@ -39,11 +39,11 @@ function Post() {
                 <div className="cursor-pointer" onClick={() => setEmojiopen(!emojiopen)}>
                   🥰
                 </div>
-                {emojiopen == true ?
+                {emojiopen && (
                   <div className="absolute right-0 bottom-10">
                     <EmojiPicker />
                   </div>
-                : null}
+                )}
               </div>
             </form>
           </div>
