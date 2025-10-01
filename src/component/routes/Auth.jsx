@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 function Auth() {
   const [isRegistered, setIsRegistered] = useState(false);
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+    <div className="flex items-center justify-center min-h-screen bg-gray-300">
       <div className="bg-white p-6 rounded-2xl shadow-lg w-96">
         {isRegistered ? (
           // ----------- Login Form -----------
