@@ -3,7 +3,7 @@ import { useState } from "react";
 import Imag from "./image/Imag";
 import { Link } from "react-router-dom";
 function Topbar() {
-  const currentuser=true;
+  const currentuser=false;
   const [open,setOpen]=useState(false);
   return (
     <div className="flex-1 z-10 sticky top-0 bg-white py-4 ">
@@ -20,7 +20,8 @@ function Topbar() {
           </Link>
           <div className="w-8" onClick={()=>setOpen(!open)}><Imag className=""  src="../general/down.png" alt="" /></div>
           </>
-          : <span className="cursor-pointer p-1 hover:bg-gray-200 rounded-xl">Sign In</span>}
+
+          : <Link to="/auth"><span className="cursor-pointer p-1 hover:bg-gray-200 rounded-xl">Sign In</span></Link>}
          
           {open &&(
         <div className="flex flex-col absolute top-12 right-0 bg-white shadow-lg border rounded-lg p-4 gap-4">
