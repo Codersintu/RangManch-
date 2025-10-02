@@ -46,12 +46,6 @@ function Auth() {
             <form className="space-y-4">
               <input
                 type="text"
-                placeholder="Username"
-                className="w-full p-2 border rounded-lg"
-                required
-              />
-              <input
-                type="text"
                 placeholder="Name"
                 className="w-full p-2 border rounded-lg"
                 required
